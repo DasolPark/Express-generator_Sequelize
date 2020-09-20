@@ -31,7 +31,10 @@ Object.keys(db).forEach(modelName => {
   }
 });
 
-db.sequelize = sequelize;
-db.Sequelize = Sequelize;
+db.sequelize = sequelize; // instance
+db.Sequelize = Sequelize; // package
+
+db.User = require('./user')(sequelize, Sequelize);
+db.Comment = require('./comment')(sequelize, Sequelize);
 
 module.exports = db;

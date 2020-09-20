@@ -26,5 +26,3 @@
 - sequelize --help
 - sequelize init: 필요한 files와 folders를 자동으로 생성해준다
   - config, models, migrations, seeders
-- sequelize db:create (Schema 생성)
-- sequelize.define (table 생성)
